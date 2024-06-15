@@ -4,7 +4,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 url = "https://api.ultralytics.com/v1/predict/coZThRvFC3t2brXOu2ES"
-headers = {"x-api-key": "34c4ac86a3e4756731a2a6c473798a595bd1fb795f"}
+headers = {"x-api-key": "34c4ac86a3e4756731a2a6c473798a595bd1fb795f"} # you can use my api key i don't need it anymore since it was just for testing have fun
 data = {"size": 640, "confidence": 0.25, "iou": 0.45}
 with open("test.jpg", "rb") as f:
     response = requests.post(url, headers=headers, data=data, files={"image": f})
